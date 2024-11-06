@@ -1,0 +1,60 @@
+/* Nome e dados pessoais*/
+.cabecalho{
+    display: flex;
+    flex-direction:row;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 80vw;
+}
+img{
+    border-radius:60px;
+}
+/*Corpo e margens*/
+section{
+    padding: 5px;
+    text-wrap: wrap;
+    border-bottom: 5px solid blueviolet;
+}
+/*Para deixar o texto 'centralizado'*/
+main{
+    width:80vw;
+}
+/*Fonte, 'centralização', margens e cor das margens*/
+body{
+    font-family:sans-serif;
+    width: 80vw;
+    margin: 0 auto;
+    border: 5px solid blueviolet;
+    padding: 5px;
+    background-color: var(--light-mode);
+    color: var(--light-text);
+}
+/*feedback de click*/
+.feedback{
+    cursor: pointer;
+}
+.feedback:hover{
+    color:blueviolet;
+}
+
+/*Modo escuro toggle*/
+.dark-mode{
+    background-color: var(--dark-mode);
+    color: var(--dark-text);
+}
+/*as cores do background e texto*/
+:root{
+    --light-mode: #ffffff;
+    --light-text: #000000;
+    --dark-mode: #121212;
+    --dark-text: #ffffff;
+}
+
+/*Aqui é para caso eu queira mexer o ID neste lado aqui, e não no JS.*/
+#Habilidades {
+    display: none;
+}
+#Conhecimentos{
+    display: none;
+}
+

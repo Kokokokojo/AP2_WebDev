@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/curriculo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESTA COISA</title>
+</head>
+<body>
+    <!--comentario dificil de inicia meudeus-->
+    <!--Inicio Titulo-->
+    <header class = "cabecalho">
+        <!--Imagem -->
+        <div>
+            <img 
+                src="img/img.jpg" 
+                id="profilePic" 
+                style="width: 233px; height: 233px;"
+                onmouseover="changeImage()" 
+                onmouseout="resetImage()">
+        </div>
+        <!--Dados pessoais-->
+        <div>
+            <h2>Josefildo Ines da Silva Santos</h2>
+            <p>R. Rua coisada/ SP Celular: (66)6666-6666</p>
+            <p>E-mail: uma.pessoa.qualquer@aluno.faculdadeimpacta.com.br</p>
+            <p>Rede Social: https://www.linkedin.com/</p>
+        </div>
+    </header>
+    <!--Fim Titulo-->
+
+    <!--Inicio "o corpo" do site-->
+        <main>
+            <section> 
+                <h3>Objetivo</h3>
+                <p>Atuar neste mercado para desenvolvimento e gestão de Cloud Computing e Data Centers,
+                    aprimorando meus conhecimentos nesses ambientes quanto a recursos e otimizações 
+                    de armazenamento e com atuação nesta área, crescer pessoal e profissionalmente.</p>
+            </section>
+            <section>
+                <h3>Educação</h3>
+                <p>Bacharelado em Sistemas de Informação - Em andamento - FACULDADE IMPACTA TECNOLOGIA</p>
+            </section>
+            <section>
+                <!--"this" se refere a este item sendo linkado a função dropdown-->
+                <h3 class="feedback" onclick="dropdown(this, 'Hab')">Habilidades</h3>
+                <ul id="Habilidades">
+                    <li>Proatividade</li>
+                    <li>Criatividade</li>
+                    <li>Comprometimento</li>
+                    <li>Resiliência</li>
+                    <li>Solução de problemas</li>
+                    <li>Aprendizado rápido</li>
+                    <li>Flexibilidade a mudanças</li>
+                    <li>Inglês fluente</li>
+                </ul>
+            </section>
+            <section>
+                <h3 class="feedback" onclick="dropdown(this, 'Conh')">Conhecimentos</h3>
+                <ul id="Conhecimentos"> 
+                    <li>Conceito básico em Java, Kotlin e Python;</li>
+                    <li>Conceito básico em DevOps com Docker, Google Cloud Shell e Kubernetes;</li>
+                    <li>Experiência e estudo com Android Studio;</li>
+                    <li>Google Cloud Shell, certificado DevOps essentials;</li>
+                    <li>Atendimento a clientes internos e externos;</li>
+                    <li>Vendas, revisão e manutenção preventiva de Nobreaks;</li>
+                    <li>Administração de estoque e caixa;</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Experiência</h3>
+                <p>TÉCNICO ELETROELETRÔNICO</p>
+            </section>
+            <section>
+                <h3>Empresa</h3>
+                <p>EMPRESA BOA - 2016 a 2023</p>
+            </section>
+        </main>
+        <!--Fim "o corpo" do site-->
+    <script src="./lib/curriculo.js"></script>
+
+    <button onclick="DarkMode()">Dark Mode
+    </button>
+
+</body>
+<script>
+    function changeImage() {
+        document.getElementById("profilePic").src = "img/img2.jpg";
+    }
+
+    function resetImage() {
+        document.getElementById("profilePic").src = "img/img.jpg";
+    }
+</script>
+</html>
